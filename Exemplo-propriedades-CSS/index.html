@@ -1,0 +1,192 @@
+<!DOCTYPE html> <html lang="pt-BR"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>IngressosFácil</title> <link rel="stylesheet" href="styles.css"> </head> <body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo do site">
+            <h1>IngressosFácil</h1>
+        </div>
+    
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#vantagens">Vantagens</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+    
+        <!-- Seção inicial -->
+        <section id="home">
+            <h2>Bem-vindo ao IngressosFácil</h2>
+    
+            <p>
+                Encontre os melhores eventos da sua cidade com poucos cliques.
+                Consulte a
+                <a href="#eventos">programação completa</a>
+                abaixo.
+            </p>
+        </section>
+    
+        <!-- Eventos -->
+        <section id="eventos">
+            <h2>Próximos Eventos</h2>
+    
+            <table>
+                <thead>
+                    <tr>
+                        <th>Evento</th>
+                        <th>Data</th>
+                        <th>Local</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td>Show de Rock</td>
+                        <td>25/09/2026</td>
+                        <td>Arena Franca</td>
+                        <td>R$ 120,00</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Teatro: A Comédia da Vida</td>
+                        <td>30/09/2026</td>
+                        <td>Teatro Municipal</td>
+                        <td>R$ 60,00</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Exemplo evento</td>
+                        <td>05/10/2026</td>
+                        <td>Praça Central</td>
+                        <td>Entrada gratuita</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    
+        <!-- Vantagens -->
+        <section id="vantagens">
+            <h2>Por que comprar conosco?</h2>
+    
+            <ul>
+                <li>Compra 100% online e segura</li>
+                <li>Ingresso digital, sem filas</li>
+                <li>Reembolso garantido em caso de cancelamento</li>
+                <li>Suporte ao cliente todos os dias</li>
+            </ul>
+        </section>
+    
+        <!-- Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+    
+            <p>
+                Dúvidas? Fale com a gente pelo e-mail
+                <a href="mailto:contato@ingressosfacil.com">
+                    contato@ingressosfacil.com
+                </a>.
+            </p>
+        </section>
+    
+        <!-- Vídeo -->
+        <section id="video">
+            <video
+                id="videoEvento"
+                width="480"
+                poster="../../arvore-em-fundo-transparente_1308-74201.avif"
+                controls
+                muted
+                autoplay
+                loop>
+    
+                <source src="./video.mp4" type="video/mp4">
+    
+                Seu navegador não suporta a execução deste vídeo.
+            </video>
+        </section>
+    
+        <!-- Mapa -->
+        <section id="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb..."
+                width="100%"
+                height="300"
+                loading="lazy"
+                style="border: 0;"
+                allowfullscreen>
+            </iframe>
+        </section>
+    
+        <!-- Canvas -->
+        <section id="exemplo-canvas">
+            <h2>Selo do Evento</h2>
+    
+            <canvas
+                id="seloEvento"
+                width="200"
+                height="200">
+                Seu navegador não suporta o elemento canvas.
+            </canvas>
+        </section>
+    
+    </main>
+    
+    <!-- JavaScript do Canvas -->
+    <script>
+        const canvas = document.getElementById('seloEvento');
+    
+        if (canvas) {
+            const ctx = canvas.getContext('2d');
+    
+            // Círculo preenchido
+            ctx.beginPath();
+            ctx.arc(100, 100, 90, 0, Math.PI * 2);
+    
+            ctx.fillStyle = '#2c3e50';
+            ctx.fill();
+    
+            // Borda do círculo
+            ctx.beginPath();
+            ctx.arc(100, 100, 90, 0, Math.PI * 2);
+    
+            ctx.strokeStyle = '#f4d03f';
+            ctx.lineWidth = 6;
+            ctx.stroke();
+    
+            // Texto VIP
+            ctx.fillStyle = '#ffffff';
+            ctx.font = 'bold 20px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+    
+            ctx.fillText('VIP', 100, 100);
+        }
+    </script>
+        <section.>
+            <div class="eventos-container">
+                <div class="evento-item">
+                    <h3>Show de Rock</h3>
+                    <p>25/09/2026, Arena Franca</p>
+                </div>
+                <div class="evento-item">
+                    <h3>Teatro: A Comédia da Vida</h3>
+                    <p>30/09/2026, Teatro Municipal</p>
+                </div>
+                <div class="evento-item">
+                    <h3>Festival Gastronômico</h3>
+                    <p>05/10/2026, Praça Central</p>
+                </div>
+            </div>
+        </section.>
+    <!-- Rodapé -->
+    <footer>
+        <p>
+            &copy; 2026 IngressosFácil - Todos os direitos reservados
+        </p>
+    </footer>
+    
+    </body> </html>
